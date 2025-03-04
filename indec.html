@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section id="tiendaForm">
+        <h3>Datos Iniciales de Caja</h3>
+        <input type="text" id="tiendaForm_inMontoCaja" placeholder="Indique el Monto de inicio"></input>
+        <input type="text" id="tiendaForm_inPorcIncremento" placeholder="Porcentaje de Incremento"></input>
+        <button id="tiendaForm_btIniciar">Iniciar Caja</button>
+
+    </section>
+
+    <section id="ventaForm">
+        <h3>Datos del Cliente</h3>
+        <input type="text" id="ventaForm_inNombre" placeholder="Nombre del Ciente"></input>
+        <input type="text" id="ventaForm_inFactura" placeholder="Nro de Factura"></input>
+        <input type="text" id="ventaForm_inCostoT" placeholder="Costo de la Compra"></input>
+        <input type="text" id="ventaForm_inCantArts" placeholder="Cantidad de Articulos"></input>
+        <button id="ventaForm_btProcesar">Procesar Informacion</button>
+    </section>
+
+    
+    <section>
+        <p><strong>Monto final en caja:</strong> <span id="tiendaForm_lblCierreCaja"> 0</span> BsD</p>
+        <p><strong>Cliente que pagó el monto mayor:</strong> <span id="tiendaForm_lblPagoMayor"> ?</span></p>
+        <p><strong>Cantidad de clientes que sólo llevaron 1 artículo:</strong> <span id="tiendaForm_lblCliente1Art"> 0</span></p>
+        
+        <table id="tiendaForm_tabla">
+            <h3>Reporte Tienda</h3>
+            <tr>
+                <th>Cliente</th>
+                <th>Factura</th>
+                <th>Costo</th>
+                <th>Cant Articulos</th>
+            </tr>
+        </table> <br>
+
+    </section>
+</body>
+<script type="module">
+   import CL_Principal from "./js/Principal.js";
+   new CL_Principal()
+</script>
+
+</html>
