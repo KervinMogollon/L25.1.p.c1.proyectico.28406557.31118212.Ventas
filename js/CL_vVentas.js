@@ -1,6 +1,5 @@
 export default class CL_vVentas {
     constructor() {
-        this.vista = document.getElementById("ventaForm");
         this.inNombre = document.getElementById("ventaForm_inNombre");
         this.inFactura = document.getElementById("ventaForm_inFactura");
         this.inCostoT = document.getElementById("ventaForm_inCostoT");

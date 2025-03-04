@@ -29,13 +29,16 @@
     </section>
 
     
+
     <section>
-        <p><strong>Monto final en caja:</strong> <span id="tiendaForm_lblCierreCaja"> 0</span> BsD</p>
-        <p><strong>Cliente que pagó el monto mayor:</strong> <span id="tiendaForm_lblPagoMayor"> ?</span></p>
-        <p><strong>Cantidad de clientes que sólo llevaron 1 artículo:</strong> <span id="tiendaForm_lblCliente1Art"> 0</span></p>
-        
+        <h3>Reporte Tienda</h3>
+        <div id="tiendaForm_salida">
+            <br><strong>Monto final en caja:</strong> 0BsD
+            <br><strong>Cliente que pagó el monto mayor:</strong> ?
+            <br><strong>Cantidad de clientes que sólo llevaron 1 artículo:</strong> 0
+        </div> <br>
+
         <table id="tiendaForm_tabla">
-            <h3>Reporte Tienda</h3>
             <tr>
                 <th>Cliente</th>
                 <th>Factura</th>
@@ -47,8 +50,8 @@
     </section>
 </body>
 <script type="module">
-   import CL_Principal from "./js/Principal.js";
-   new CL_Principal()
+    import CL_Principal from "./js/Principal.js";
+    new CL_Principal()
 </script>
 
 </html>

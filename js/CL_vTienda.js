@@ -12,12 +12,8 @@ export default class CL_vTienda {
 
         this.vVentas = new CL_vVentas();
 
-        this.vista = document.getElementById("tiendaForm");
         this.tabla = document.getElementById("tiendaForm_tabla");
-
-        this.lblCierreCaja = document.getElementById("tiendaForm_lblCierreCaja");
-        this.lblPagoMayor = document.getElementById("tiendaForm_lblPagoMayor");
-        this.lblCliente1Art = document.getElementById("tiendaForm_lblCliente1Art");
+        this.salida = document.getElementById("tiendaForm_salida");
 
         this.vVentas.btProcesar.onclick= () =>
             this.controlador.procesarVentas();
@@ -53,9 +49,12 @@ export default class CL_vTienda {
       
     </tr>`;
 
-        this.lblCierreCaja.innerHTML = CierreCaja;
-        this.lblPagoMayor.innerHTML = PagoMayor;
-        this.lblCliente1Art.innerHTML = lblCliente1Art;
+        this.salida.innerHTML =`
+        <br><strong>Monto final en caja:</strong> ${CierreCaja}BsD
+        <br><strong>Cliente que pagó el monto mayor:</strong> ${PagoMayor}
+        <br><strong>Cantidad de clientes que sólo llevaron 1 artículo:</strong> ${lblCliente1Art}
+        <br>
+        `
 
     }
 }
